@@ -5,7 +5,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Header from 'components/Header';
 import { container, backgroundColor } from 'assets/styles/baseStyles';
 import BannerSection from './Sections/BannerSection';
-import SchoolsSection from './Sections/SchoolsSection';
 import DepositionsSection from './Sections/DepositionsSection';
 
 const useStyles = makeStyles({
@@ -24,7 +23,6 @@ function Home(props) {
       <div className={classes.container}>
         <DepositionsSection />
       </div>
-      {/* <SchoolsSection /> */}
     </div>
   );
 }
