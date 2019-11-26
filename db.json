@@ -1,0 +1,148 @@
+{
+  "depoinments": [
+    {
+      "id": 1,
+      "name": "Diego Fernandes",
+      "description": "Programador full-stack, apaixonado pelas melhores tecnologias de desenvolvimento back-end, front-end e mobile, é co-fundador e CTO na Rocketseat.",
+      "avatar": {
+        "id": 1,
+        "url": "https://blog.rocketseat.com.br/content/images/2019/05/profile.png"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Diego Fernandes",
+      "description": "Programador full-stack, apaixonado pelas melhores tecnologias de desenvolvimento back-end, front-end e mobile, é co-fundador e CTO na Rocketseat.",
+      "avatar": {
+        "id": 2,
+        "url": "https://blog.rocketseat.com.br/content/images/2019/05/profile.png"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Diego Fernandes",
+      "description": "Programador full-stack, apaixonado pelas melhores tecnologias de desenvolvimento back-end, front-end e mobile, é co-fundador e CTO na Rocketseat.",
+      "avatar": {
+        "id": 3,
+        "url": "https://blog.rocketseat.com.br/content/images/2019/05/profile.png"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Diego Fernandes",
+      "description": "Programador full-stack, apaixonado pelas melhores tecnologias de desenvolvimento back-end, front-end e mobile, é co-fundador e CTO na Rocketseat.",
+      "avatar": {
+        "id": 4,
+        "url": "https://blog.rocketseat.com.br/content/images/2019/05/profile.png"
+      }
+    }
+  ],
+  "sponsors": [
+    {
+      "id": 1,
+      "name": "Rocketseat",
+      "logo": {
+        "id": 1,
+        "url": "https://blog.rocketseat.com.br/content/images/2019/05/profile.png"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Rocketseat",
+      "logo": {
+        "id": 2,
+        "url": "https://blog.rocketseat.com.br/content/images/2019/05/profile.png"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Rocketseat",
+      "logo": {
+        "id": 3,
+        "url": "https://blog.rocketseat.com.br/content/images/2019/05/profile.png"
+      }
+    }
+  ],
+  "schools": [
+    {
+      "id": 1,
+      "name": "Escola de RO",
+      "logo": {
+        "id": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Bandeira_de_Rond%C3%B4nia.svg/1200px-Bandeira_de_Rond%C3%B4nia.svg.png"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Escola do Rio Grande do Sul",
+      "logo": {
+        "id": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Bandeira_do_Rio_Grande_do_Sul.svg/300px-Bandeira_do_Rio_Grande_do_Sul.svg.png "
+      }
+    },
+    {
+      "id": 3,
+      "name": "Escola de Brasilia",
+      "logo": {
+        "id": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Bandeira_de_Rond%C3%B4nia.svg/1200px-Bandeira_de_Rond%C3%B4nia.svg.png"
+      }
+    }
+  ],
+  "dashboard": [
+    {
+      "user": {
+        "id": 1,
+        "name": "Diego Fernandes",
+        "avatar": {
+          "id": 1,
+          "url": "https://blog.rocketseat.com.br/content/images/2019/05/profile.png"
+        },
+        "lessons": [
+          {
+            "id": 1,
+            "name": "Lição 01"
+          },
+          {
+            "id": 2,
+            "name": "Lição 01"
+          },
+          {
+            "id": 3,
+            "name": "Lição 01"
+          },
+          {
+            "id": 4,
+            "name": "Lição 01"
+          }
+        ],
+        "conquest": [
+          {
+            "id": 1,
+            "name": ""
+          },
+          {
+            "id": 2,
+            "name": ""
+          },
+          {
+            "id": 3,
+            "name": ""
+          },
+          {
+            "id": 4,
+            "name": ""
+          }
+        ],
+        "school": {
+          "id": 1,
+          "name": "Escola de RO",
+          "logo": {
+            "id": 1,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Bandeira_de_Rond%C3%B4nia.svg/1200px-Bandeira_de_Rond%C3%B4nia.svg.png"
+          }
+        }
+      }
+    }
+  ]
+}
