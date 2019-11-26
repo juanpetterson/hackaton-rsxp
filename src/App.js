@@ -2,13 +2,14 @@ import React, { Fragment } from 'react';
 import { hot } from 'react-hot-loader/root';
 import { BrowserRouter } from 'react-router-dom';
 
+import GlobalStyle from 'assets/styles/global';
 import Routes from 'routes';
 
 function App() {
   return (
     <Fragment>
       <BrowserRouter>
-        {/* <GlobalStyle /> */}
+        <GlobalStyle />
         <Routes />
       </BrowserRouter>
     </Fragment>
