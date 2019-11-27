@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
@@ -45,7 +46,9 @@ function BannerSection(props) {
         <GridItem xs={12} sm={12} md={12}>
           <div className={classes.container}>
             Teste
-            <Button className={classes.button}>Estou dentro</Button>
+            <Link to="/dashboard">
+              <Button className={classes.button}>Estou dentro</Button>
+            </Link>
           </div>
         </GridItem>
       </GridContainer>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import './style.scss';
 import mock from './mock';
 
@@ -7,6 +7,7 @@ export default function Lessons() {
   const [data, setData] = useState({});
 
   let { id } = useParams();
+  id = parseInt(id);
 
   function getLessonData() {
     const lesson = mock.filter(item => item.id == id);
@@ -21,10 +22,11 @@ export default function Lessons() {
 
   return (
     <div className="lesson">
+      <nav>
+        <Link to="/dashboard">Voltar para o painel</Link>
+      </nav>
       <header>
-        <h1>
-          Lição: {data.title}
-        </h1>
+        <h1>Lição: {data.title}</h1>
         <p dangerouslySetInnerHTML={{ __html: data.description }}></p>
       </header>
       <section>
@@ -32,6 +34,9 @@ export default function Lessons() {
           <iframe src={`/editor/lesson1/index.html?level=${id}`}></iframe>
         </div>
       </section>
+      <footer>
+        <Link to={`/lessons/${id + 1}`}>Próxima lição</Link>
+      </footer>
     </div>
   );
 }

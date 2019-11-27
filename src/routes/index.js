@@ -9,7 +9,6 @@ import Header from 'components/Header';
 
 const Routes = () => (
   <BrowserRouter>
-    <Header />
     <Switch>
       <Route path="/" exact component={Home} />
       <Route path="/events" component={Events} />
