@@ -10,9 +10,7 @@ export const Container = styled.div`
   background-size: auto 100%;
 `;
 
-export const WrapperLogo = styled.a`
-  background: #fff;
-`;
+export const WrapperLogo = styled.a``;
 
 export const Logo = styled.img`
   margin: 24px 0 0 24px;

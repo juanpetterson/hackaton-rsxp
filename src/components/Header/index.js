@@ -4,7 +4,6 @@ import {
   Container,
   WrapperLogo,
   Logo,
-  TitleLogo,
   Menu,
   Item,
   User,
@@ -14,7 +13,6 @@ import {
 } from './styles';
 
 import LogoImage from '../../assets/img/header/logo.png';
-import LogoText from '../../assets/img/header/logo-text.png';
 import UserImage from '../../assets/img/header/user.png';
 
 export default function Header({ signed }) {
@@ -22,7 +20,6 @@ export default function Header({ signed }) {
     <Container>
       <WrapperLogo href="/">
         <Logo src={LogoImage} />
-        <TitleLogo src={LogoText} />
       </WrapperLogo>
       <Menu>
         <Item>
