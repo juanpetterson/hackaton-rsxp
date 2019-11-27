@@ -40,6 +40,7 @@ export const Item = styled.li`
   margin: 0 50px;
 
   a {
+    color: #f36d34;
     transition: 0.2s;
   }
 
