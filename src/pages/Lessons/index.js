@@ -17,7 +17,7 @@ export default function Lessons() {
       </header>
       <section>
         <div className="editor-wrapper">
-          <iframe src="/editor/index.html"></iframe>
+          <iframe src={`/editor/lesson1/index.html?level=${id}`}></iframe>
         </div>
       </section>
     </div>
