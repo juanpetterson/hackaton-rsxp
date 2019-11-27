@@ -242,12 +242,18 @@ Plane.setText = function(id, text) {
  * @param {?boolean} ok True for checkmark, false for cross, null for nothing.
  */
 Plane.setCorrect = function(ok) {
+  var correctPopup = document.getElementById('correctPopup');
   var yes = document.getElementById('seatYes');
   var no = document.getElementById('seatNo');
   yes.style.display = 'none';
   no.style.display = 'none';
+  correctPopup.style.display = 'none';
   if (ok === true) {
     yes.style.display = 'block';
+    yes.style.display = 'none';
+    correctPopup.style.display = '';
+    var lesson = 'lesson_' + Plane.LEVEL;
+    window.localStorage.setItem(lesson, true);
   } else if (ok === false) {
     no.style.display = 'block';
   }

@@ -35,7 +35,17 @@ export default function Lessons() {
         </div>
       </section>
       <footer>
-        <Link to={`/lessons/${id + 1}`}>Próxima lição</Link>
+        {id > 1 && (
+          <Link className="left" to={`/lessons/${id - 1}`}>
+            Lição anterior
+          </Link>
+        )}
+        <span></span>
+        {id < 3 && (
+          <Link className="right" to={`/lessons/${id + 1}`}>
+            Próxima lição
+          </Link>
+        )}
       </footer>
     </div>
   );
