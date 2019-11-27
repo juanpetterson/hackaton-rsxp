@@ -65,7 +65,7 @@ export const WrapperSign = styled.div`
   margin: 16px;
 `;
 
-export const SignUp = styled.button`
+export const SignUp = styled.a`
   border: 0;
   padding: 10px;
   background: #f36d34;
@@ -73,6 +73,10 @@ export const SignUp = styled.button`
   font-size: 18px;
   color: #fff;
   font-weight: bold;
+
+  :visited {
+    color: #fff;
+  }
 `;
 
 export const SignIn = styled.a`
