@@ -105,3 +105,19 @@ html[dir='RTL'] #plane text {
 .sliderKnob:hover {
   fill: #eee;
 }
+
+
+.editor-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 50px;
+}
+
+.plane-wrapper{
+  max-width: 700px;
+  margin-right: 30px;
+}
+
+.blockly-wrapper{
+  flex: 1;
+}

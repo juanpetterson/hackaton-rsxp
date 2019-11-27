@@ -1,19 +1,31 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './style.scss';
+import mock from './mock';
 
 export default function Lessons() {
+  const [data, setData] = useState({});
+
   let { id } = useParams();
+
+  function getLessonData() {
+    const lesson = mock.filter(item => item.id == id);
+    if (lesson.length) {
+      setData(lesson[0]);
+    }
+  }
+
+  useEffect(() => {
+    getLessonData();
+  });
 
   return (
     <div className="lesson">
       <header>
-        <h1>Lição {id}</h1>
-        <p>
-          Escreva um código que verifique corretamente o resultado de uma conta
-          de multiplicação. Caso o resultado esteja correto, deve exibir
-          "ACERTOU!" e caso esteja errado, aparece "ERROU!"
-        </p>
+        <h1>
+          Lição: {data.title}
+        </h1>
+        <p dangerouslySetInnerHTML={{ __html: data.description }}></p>
       </header>
       <section>
         <div className="editor-wrapper">
