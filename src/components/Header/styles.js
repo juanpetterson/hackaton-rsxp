@@ -12,9 +12,7 @@ export const Container = styled.div`
   position: relative;
 `;
 
-export const WrapperLogo = styled.div`
-  background: #fff;
-`;
+export const WrapperLogo = styled.a``;
 
 export const Logo = styled.img`
   margin: 24px 0 0 24px;
@@ -60,4 +58,37 @@ export const User = styled.img`
   margin: 24px 24px 0 0;
   width: 250px;
   height: 100px;
+`;
+
+export const WrapperSign = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px;
+`;
+
+export const SignUp = styled.a`
+  border: 0;
+  padding: 10px;
+  background: #f36d34;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+
+  :visited {
+    color: #fff;
+  }
+`;
+
+export const SignIn = styled.a`
+  font-size: 18px;
+  color: #f36d34;
+  font-weight: bold;
+  margin-right: 16px;
+  cursor: pointer;
+
+  :visited {
+    color: #f36d34;
+  }
 `;
