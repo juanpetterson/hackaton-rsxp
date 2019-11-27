@@ -1,0 +1,23 @@
+.lesson {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+
+  header {
+    padding: 50px;
+  }
+
+  section {
+    flex: 1;
+  }
+}
+.editor-wrapper {
+  width: 100%;
+  height: 100%;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
