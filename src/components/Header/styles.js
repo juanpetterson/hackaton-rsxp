@@ -42,11 +42,12 @@ export const Item = styled.li`
   margin: 0 50px;
 
   a {
+    color: #f36d34;
     transition: 0.2s;
   }
 
   a:visited {
-    color: #4d4d4d;
+    color: #f36d34;
   }
 
   a:hover {

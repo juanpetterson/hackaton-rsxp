@@ -17,7 +17,7 @@ import {
 export default function Events() {
   return (
     <>
-      <Header />
+      <Header signed />
       <List>
         <Event>Rocketseat Experience 2019</Event>
         <Event>Rocketseat Experience 2019</Event>
