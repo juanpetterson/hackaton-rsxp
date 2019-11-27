@@ -23,12 +23,6 @@ export default function Events() {
         <Event>Rocketseat Experience 2019</Event>
         <Event>Rocketseat Experience 2019</Event>
         <Event>Rocketseat Experience 2019</Event>
-        <Event>Rocketseat Experience 2019</Event>
-        <Event>Rocketseat Experience 2019</Event>
-        <Event>Rocketseat Experience 2019</Event>
-        <Event>Rocketseat Experience 2019</Event>
-        <Event>Rocketseat Experience 2019</Event>
-        <Event>Rocketseat Experience 2019</Event>
       </List>
       <Ranking>
         <Title>Ranking</Title>
