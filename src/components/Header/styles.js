@@ -45,7 +45,7 @@ export const Item = styled.li`
   }
 
   a:visited {
-    color: #4d4d4d;
+    color: #f36d34;
   }
 
   a:hover {
