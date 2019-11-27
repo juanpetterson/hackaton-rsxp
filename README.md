@@ -35,7 +35,6 @@ Exemplo:
 
 - [GitHub](https://github.com/juanpetterson/hackaton-rsxp)
 - [Figma](https://www.figma.com/file/kAkyFEUL4KnCadcWmDrMyN/Hackathon-RSXP)
-- [Zeplin](https://app.zeplin.io/project/5dde66bf1b73d7a6f1b03936)
 
 ## Pápeis da equipe
 
