@@ -24,21 +24,29 @@ export const Main = styled.div`
   }
 `;
 export const List = styled.ul`
-  margin-top: 10px;
   list-style: none;
-  width: 800px;
   display: flex;
-
   flex-direction: row;
 
+  justify-content: center;
+  width: 800px;
+
+  padding: 50px;
+
   li {
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+    background: #ccc;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 20px;
+    width: 600px;
+    height: 200px;
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 10px;
+  }
+  p {
+    font-size: 16px;
   }
 `;
