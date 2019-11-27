@@ -106,18 +106,17 @@ html[dir='RTL'] #plane text {
   fill: #eee;
 }
 
-
-.editor-wrapper{
+.editor-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 50px;
+  padding: 0 20px;
 }
 
-.plane-wrapper{
-  max-width: 700px;
-  margin-right: 30px;
+.plane-wrapper {
+  max-width: 530px;
+  margin-right: 0px;
 }
 
-.blockly-wrapper{
+.blockly-wrapper {
   flex: 1;
 }

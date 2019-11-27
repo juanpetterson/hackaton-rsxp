@@ -8,6 +8,8 @@ export const Container = styled.div`
   background: url(${Background}) no-repeat;
   background-position: top right;
   background-size: auto 100%;
+  z-index: 2;
+  position: relative;
 `;
 
 export const WrapperLogo = styled.div`
