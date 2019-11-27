@@ -1,19 +1,25 @@
 import styled from 'styled-components';
+import Background from 'assets/img/header/header.png';
 
 export const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background: url('../../assets/img/header/header.png') no-repeat;
+  background: url(${Background}) no-repeat;
+  background-position: top right;
+  background-size: auto 100%;
 `;
 
-export const WrapperLogo = styled.div``;
+export const WrapperLogo = styled.div`
+  background: #fff;
+`;
 
 export const Logo = styled.img`
   margin: 24px 0 0 24px;
 `;
 
 export const TitleLogo = styled.img`
+  width: 100px;
   position: relative;
   left: 10px;
   top: -55px;
@@ -33,27 +39,22 @@ export const Item = styled.li`
   border-radius: 50px;
   margin: 0 50px;
 
+  a {
+    transition: 0.2s;
+  }
+
   a:visited {
     color: #4d4d4d;
   }
+
+  a:hover {
+    color: #f36d34;
+    border-bottom: 2px solid #f36d34;
+  }
 `;
 
-export const User = styled.div`
-  display: flex;
-  align-items: center;
-  margin-right: 16px;
-`;
-
-export const Name = styled.h1`
-  font-size: 18px;
-  font-weight: normal;
-  color: #f36d34;
-`;
-
-export const Avatar = styled.img`
-  width: 80px;
-  height: 80px;
-  border-radius: 40px;
-  background: rgba(0, 0, 0, 0.3);
-  margin: 8px;
+export const User = styled.img`
+  margin: 24px 24px 0 0;
+  width: 250px;
+  height: 100px;
 `;
