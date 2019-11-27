@@ -19,15 +19,16 @@ import proTips from 'assets/img/dashboard/dicas-pro.png';
 
 import {
   LessonContainer,
-  LessonWrapper,
   LessonContent,
   LessonRef,
   LessonStats,
   LessonFooter,
+  LessonFooterWrapper,
   EnterLesson,
+  EnterLessonSpan,
+  LessonTitle,
   DashboardImageContainer,
   ConquestsContainer,
-  ConquestsTitle,
   ConquestsItem,
   ConquestsItemSpan,
   ConquestsItemWrapper,
@@ -62,7 +63,7 @@ export default function Dashboard() {
   const classes = useStyles();
   return (
     <div>
-      <Header signedIn />
+      <Header signed />
       <GridContainer className={classes.container}>
         <GridItem xs={12} sm={8} md={8} className={classes.grid}>
           <DashboardImageContainer>
@@ -70,12 +71,24 @@ export default function Dashboard() {
           </DashboardImageContainer>
           <LessonContainer>
             <LessonRef href={`/lessons/${currentLevel}`}>
-              <LessonContent />
+              <LessonContent>
+                <LessonFooter>
+                  <LessonFooterWrapper>
+                    <LessonTitle>{`Lição 0${currentLevel}: Avião do Flamengo`}</LessonTitle>
+                    <EnterLesson>
+                      <EnterLessonSpan>FAZER LIÇÃO</EnterLessonSpan>
+                    </EnterLesson>
+                  </LessonFooterWrapper>
+                </LessonFooter>
+              </LessonContent>
             </LessonRef>
             <LessonStats>
               <img src={lessonStats} alt="lessonStats" />
             </LessonStats>
           </LessonContainer>
+          <div>
+            <img src={proTips} alt="proTips" style={{ width: '100%' }} />
+          </div>
         </GridItem>
         <GridItem xs={12} sm={4} md={4} className={classes.grid}>
           <ConquestsContainer>
@@ -90,9 +103,37 @@ export default function Dashboard() {
               <GridItem xs={4} sm={6} md={4}>
                 <ConquestsItemWrapper>
                   <ConquestsItem>
-                    <ConquestsItemSpan>?</ConquestsItemSpan>
+                    {currentLevel > 1 ? (
+                      <div>
+                        <img
+                          src={conquestBadget1}
+                          alt="conquestBadget1"
+                          style={{
+                            maxWidth: '60px',
+                            top: '-10px',
+                            left: '1px%',
+                            position: 'relative',
+                          }}
+                        />
+                        <span
+                          style={{
+                            fontSize: '11px',
+                            fontWeight: 'bold',
+                            position: 'relative',
+                            top: '-10px',
+                            left: '15px',
+                            color: '#565656',
+                            display: 'block',
+                            width: '10px',
+                          }}
+                        >
+                          Hello World
+                        </span>
+                      </div>
+                    ) : (
+                      <ConquestsItemSpan>?</ConquestsItemSpan>
+                    )}
                   </ConquestsItem>
-                  <ConquestsTitle>Conquista 1</ConquestsTitle>
                 </ConquestsItemWrapper>
               </GridItem>
               <GridItem xs={4} sm={6} md={4}>
@@ -100,7 +141,6 @@ export default function Dashboard() {
                   <ConquestsItem>
                     <ConquestsItemSpan>?</ConquestsItemSpan>
                   </ConquestsItem>
-                  <ConquestsTitle>Conquista 2</ConquestsTitle>
                 </ConquestsItemWrapper>
               </GridItem>
               <GridItem xs={4} sm={6} md={4}>
@@ -108,7 +148,6 @@ export default function Dashboard() {
                   <ConquestsItem>
                     <ConquestsItemSpan>?</ConquestsItemSpan>
                   </ConquestsItem>
-                  <ConquestsTitle>Conquista 3</ConquestsTitle>
                 </ConquestsItemWrapper>
               </GridItem>
               <GridItem xs={4} sm={6} md={4}>
@@ -116,7 +155,6 @@ export default function Dashboard() {
                   <ConquestsItem>
                     <ConquestsItemSpan>?</ConquestsItemSpan>
                   </ConquestsItem>
-                  <ConquestsTitle>Conquista 4</ConquestsTitle>
                 </ConquestsItemWrapper>
               </GridItem>
               <GridItem xs={4} sm={6} md={4}>
@@ -124,7 +162,6 @@ export default function Dashboard() {
                   <ConquestsItem>
                     <ConquestsItemSpan>?</ConquestsItemSpan>
                   </ConquestsItem>
-                  <ConquestsTitle>Conquista 5</ConquestsTitle>
                 </ConquestsItemWrapper>
               </GridItem>
               <GridItem xs={4} sm={6} md={4}>
@@ -132,7 +169,6 @@ export default function Dashboard() {
                   <ConquestsItem>
                     <ConquestsItemSpan>?</ConquestsItemSpan>
                   </ConquestsItem>
-                  <ConquestsTitle>Conquista 6</ConquestsTitle>
                 </ConquestsItemWrapper>
               </GridItem>
             </GridContainer>

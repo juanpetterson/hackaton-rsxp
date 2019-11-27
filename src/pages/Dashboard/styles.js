@@ -5,13 +5,12 @@ export const LessonContainer = styled.div`
   display: flex;
   flex: 1;
   flex-direction: row;
-  height: 100%;
 `;
 export const LessonContent = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: 300px;
   background: url(${lessonBanner});
   background-size: cover;
@@ -24,14 +23,25 @@ export const LessonHeader = styled.div`
 `;
 
 export const LessonStats = styled.div`
-  height: 100%px;
+  flex: 1;
+  height: 100%;
   width: 100%;
 `;
 
 export const LessonFooter = styled.div`
   display: flex;
+  flex: 1;
   height: 50px;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
+`;
+
+export const LessonFooterWrapper = styled.div`
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px 20px 20px;
 `;
 
 export const LessonRef = styled.a`
@@ -39,17 +49,38 @@ export const LessonRef = styled.a`
   width: 100%;
 `;
 
+export const LessonTitle = styled.span`
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.75;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+`;
+
 export const EnterLesson = styled.button`
-  width: 100px;
-  height: 100%;
-  background: #fff;
-  color: #282828;
-  border-radius: 10px;
+  height: 74px;
+  background: #f2b907;
+  color: #fff;
   margin: 10px;
   border: none;
   text-decoration: none;
-  font-size: 14px;
   vertical-align: middle;
+`;
+
+export const EnterLessonSpan = styled.span`
+  text-shadow: 1px 1.7px 0 rgba(0, 0, 0, 0.16);
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.75;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  margin: 0 5px;
 `;
 
 export const DashboardImageContainer = styled.div`
@@ -88,7 +119,6 @@ export const ConquestsItemSpan = styled.div`
   width: 24px;
   height: 34px;
   opacity: 0.5;
-  font-family: OpenSans;
   font-size: 48px;
   font-weight: 800;
   font-stretch: normal;
