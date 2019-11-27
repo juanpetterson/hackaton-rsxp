@@ -10,18 +10,26 @@ import GridItem from 'components/Grid/GridItem';
 
 import titleConquests from 'assets/img/dashboard/title-conquistas.png';
 import titleDashboard from 'assets/img/dashboard/title-dashboard.png';
+import titleLiga from 'assets/img/dashboard/title-liga.png';
+import rankingItemSchool from 'assets/img/dashboard/ranking-item-escola.png';
+import rankingItemUser from 'assets/img/dashboard/ranking-item-user.png';
+import conquestBadget1 from 'assets/img/dashboard/badge-01.png';
+import lessonStats from 'assets/img/dashboard/lesson-stats.png';
+import proTips from 'assets/img/dashboard/dicas-pro.png';
 
 import {
   LessonContainer,
-  LessonHeader,
+  LessonWrapper,
+  LessonContent,
+  LessonRef,
+  LessonStats,
   LessonFooter,
-  LessonSpan,
-  EnterlessonWrapper,
   EnterLesson,
   DashboardImageContainer,
   ConquestsContainer,
   ConquestsTitle,
   ConquestsItem,
+  ConquestsItemSpan,
   ConquestsItemWrapper,
 } from './styles';
 
@@ -42,7 +50,6 @@ export default function Dashboard() {
     for (let i = 0; i < maxLevels; i++) {
       const level = window.localStorage.getItem(`lesson_${i + 1}`);
       if (!level) {
-        console.log(i, i + 1);
         setCurrentLevel(i + 1);
         break;
       }
@@ -62,62 +69,94 @@ export default function Dashboard() {
             <img src={titleDashboard} alt="titleDashboard" />
           </DashboardImageContainer>
           <LessonContainer>
-            <LessonHeader>
-              <LessonSpan>{`Lição 0${currentLevel}`}</LessonSpan>
-              <LessonSpan>{`0${currentLevel}/10`}</LessonSpan>
-            </LessonHeader>
-            <LessonFooter>
-              <EnterlessonWrapper href={`/lessons/${currentLevel}`}>
-                <EnterLesson href={`/lessons/${currentLevel}`}>
-                  Entrar na Lição
-                </EnterLesson>
-              </EnterlessonWrapper>
-            </LessonFooter>
+            <LessonRef href={`/lessons/${currentLevel}`}>
+              <LessonContent />
+            </LessonRef>
+            <LessonStats>
+              <img src={lessonStats} alt="lessonStats" />
+            </LessonStats>
           </LessonContainer>
         </GridItem>
         <GridItem xs={12} sm={4} md={4} className={classes.grid}>
           <ConquestsContainer>
             <div>
-              <img src={titleConquests} alt="titleConquests" />
+              <img
+                src={titleConquests}
+                alt="titleConquests"
+                style={{ maxWidth: '100%' }}
+              />
             </div>
             <GridContainer>
               <GridItem xs={4} sm={6} md={4}>
                 <ConquestsItemWrapper>
-                  <ConquestsItem />
+                  <ConquestsItem>
+                    <ConquestsItemSpan>?</ConquestsItemSpan>
+                  </ConquestsItem>
                   <ConquestsTitle>Conquista 1</ConquestsTitle>
                 </ConquestsItemWrapper>
               </GridItem>
               <GridItem xs={4} sm={6} md={4}>
                 <ConquestsItemWrapper>
-                  <ConquestsItem />
+                  <ConquestsItem>
+                    <ConquestsItemSpan>?</ConquestsItemSpan>
+                  </ConquestsItem>
                   <ConquestsTitle>Conquista 2</ConquestsTitle>
                 </ConquestsItemWrapper>
               </GridItem>
               <GridItem xs={4} sm={6} md={4}>
                 <ConquestsItemWrapper>
-                  <ConquestsItem />
+                  <ConquestsItem>
+                    <ConquestsItemSpan>?</ConquestsItemSpan>
+                  </ConquestsItem>
                   <ConquestsTitle>Conquista 3</ConquestsTitle>
                 </ConquestsItemWrapper>
               </GridItem>
               <GridItem xs={4} sm={6} md={4}>
                 <ConquestsItemWrapper>
-                  <ConquestsItem />
+                  <ConquestsItem>
+                    <ConquestsItemSpan>?</ConquestsItemSpan>
+                  </ConquestsItem>
                   <ConquestsTitle>Conquista 4</ConquestsTitle>
                 </ConquestsItemWrapper>
               </GridItem>
               <GridItem xs={4} sm={6} md={4}>
                 <ConquestsItemWrapper>
-                  <ConquestsItem />
+                  <ConquestsItem>
+                    <ConquestsItemSpan>?</ConquestsItemSpan>
+                  </ConquestsItem>
                   <ConquestsTitle>Conquista 5</ConquestsTitle>
                 </ConquestsItemWrapper>
               </GridItem>
               <GridItem xs={4} sm={6} md={4}>
                 <ConquestsItemWrapper>
-                  <ConquestsItem />
+                  <ConquestsItem>
+                    <ConquestsItemSpan>?</ConquestsItemSpan>
+                  </ConquestsItem>
                   <ConquestsTitle>Conquista 6</ConquestsTitle>
                 </ConquestsItemWrapper>
               </GridItem>
             </GridContainer>
+            <div style={{ margin: '20px 0' }}>
+              <img
+                src={titleLiga}
+                alt="titleLiga"
+                style={{ maxWidth: '100%' }}
+              />
+            </div>
+            <div>
+              <img
+                src={rankingItemSchool}
+                alt="rankingItemSchool"
+                style={{ width: '100%' }}
+              />
+            </div>
+            <div>
+              <img
+                src={rankingItemUser}
+                alt="titleUser"
+                style={{ width: '100%' }}
+              />
+            </div>
           </ConquestsContainer>
         </GridItem>
       </GridContainer>
