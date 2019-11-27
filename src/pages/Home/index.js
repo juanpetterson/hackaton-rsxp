@@ -2,10 +2,10 @@ import React from 'react';
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
 
-import Header from 'components/Header';
 import { container, backgroundColor } from 'assets/styles/baseStyles';
 import BannerSection from './Sections/BannerSection';
 import DepositionsSection from './Sections/DepositionsSection';
+import Header from 'components/Header';
 
 const useStyles = makeStyles({
   container: {

@@ -1,0 +1,32 @@
+#correctPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999999;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#correctPopup.review {
+  display: none !important;
+}
+
+#correctPopup .wrapper {
+  position: relative;
+  border-radius: 20px;
+  max-width: 500px;
+  max-height: 500px;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  background: #fff;
+  padding: 50px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}

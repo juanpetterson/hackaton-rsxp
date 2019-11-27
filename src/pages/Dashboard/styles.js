@@ -26,13 +26,27 @@ export const LessonSpan = styled.span`
   color: #282828;
 `;
 
+export const EnterlessonWrapper = styled.a`
+  height: 30px;
+`;
+
 export const EnterLesson = styled.button`
   width: 100px;
+  height: 100%;
   background: #fff;
   color: #282828;
   border-radius: 10px;
   margin: 10px;
   border: none;
+  text-decoration: none;
+  font-size: 14px;
+  vertical-align: middle;
+`;
+
+export const DashboardImageContainer = styled.div`
+  position: absolute;
+  top: -14%;
+  left: 15%;
 `;
 
 export const ConquestsContainer = styled.div`
@@ -52,8 +66,8 @@ export const ConquestsItemWrapper = styled.div`
 `;
 
 export const ConquestsItem = styled.div`
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background: #fff;
   margin-bottom: 10px;
