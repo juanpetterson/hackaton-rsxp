@@ -1,1 +1,1 @@
-# hackaton-rsxp
+# DEV de Casa - Hackathon RS/XP
