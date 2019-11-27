@@ -1,6 +1,7 @@
 {
   "name": "hackaton-rsxp",
   "version": "0.1.0",
+  "homepage": "/",
   "private": true,
   "dependencies": {
     "@hot-loader/react-dom": "^16.11.0",
