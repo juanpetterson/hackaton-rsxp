@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
@@ -12,6 +12,8 @@ import imageDeposition4 from 'assets/img/depositions/deposition4.png';
 import GridContainer from 'components/Grid/GridContainer';
 import GridItem from 'components/Grid/GridItem';
 import DepositionCard from 'components/Card/DepositionCard';
+
+import api from 'services/api';
 
 const useStyles = makeStyles(theme => ({
   section: {
@@ -58,39 +60,39 @@ const useStyles = makeStyles(theme => ({
 
 function DepositionsSection(props) {
   const classes = useStyles();
+  const [depositions, setDepositions] = useState([]);
+
+  useEffect(() => {
+    async function loadDepositions() {
+      const response = await api.get('depositions');
+      const { data } = response;
+
+      setDepositions(data);
+    }
+
+    loadDepositions();
+  }, []);
 
   return (
     <div className={classes.section}>
       <h2 className={classes.title}>Depoimentos</h2>
       <GridContainer>
-        <GridItem xs={12} sm={6} md={3} className={classes.grid}>
-          <DepositionCard
-            avatar={imageDeposition1}
-            name="Name"
-            description="Com 14 anos eu já havia ganhado meu primeiro milhão!"
-          />
-        </GridItem>
-        <GridItem xs={12} sm={6} md={3} className={classes.grid}>
-          <DepositionCard
-            avatar={imageDeposition2}
-            name="Name"
-            description="Com 14 anos eu já havia ganhado meu primeiro milhão!"
-          />
-        </GridItem>
-        <GridItem xs={12} sm={6} md={3} className={classes.grid}>
-          <DepositionCard
-            avatar={imageDeposition3}
-            name="Name"
-            description="Com 14 anos eu já havia ganhado meu primeiro milhão!"
-          />
-        </GridItem>
-        <GridItem xs={12} sm={6} md={3} className={classes.grid}>
-          <DepositionCard
-            avatar={imageDeposition4}
-            name="Name"
-            description="Com 14 anos eu já havia ganhado meu primeiro milhão!"
-          />
-        </GridItem>
+        {depositions &&
+          depositions.map(deposition => (
+            <GridItem
+              xs={12}
+              sm={6}
+              md={3}
+              className={classes.grid}
+              key={deposition.id}
+            >
+              <DepositionCard
+                avatar={deposition.avatar.url}
+                name={deposition.name}
+                description={deposition.description}
+              />
+            </GridItem>
+          ))}
       </GridContainer>
     </div>
   );

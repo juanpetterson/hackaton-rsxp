@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
 
 function Header(props) {
   const classes = useStyles();
-  const { logo } = props;
+  const { logo, signedIn } = props;
 
   return (
     <div className={classes.root}>
