@@ -250,7 +250,7 @@ Plane.setCorrect = function(ok) {
   correctPopup.style.display = 'none';
   if (ok === true) {
     yes.style.display = 'block';
-    yes.style.display = 'none';
+    no.style.display = 'none';
     correctPopup.style.display = '';
     var lesson = 'lesson_' + Plane.LEVEL;
     window.localStorage.setItem(lesson, true);
