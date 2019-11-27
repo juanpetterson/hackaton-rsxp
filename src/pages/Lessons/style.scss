@@ -1,7 +1,16 @@
 .lesson {
   display: flex;
   flex-flow: column;
-  height: 100%;
+  min-height: calc(100vh - 80px);
+
+  .back {
+    background: #f2632f;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 20px 0 0 20px;
+  }
 
   header {
     padding: 50px;
@@ -12,15 +21,25 @@
   }
 
   footer {
-    padding: 50px;
-    border-top: 1px solid gray;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    // border-top: 1px solid gray;
     display: flex;
     justify-content: space-between;
+    background: #f2632f;
+    color: white;
+    a {
+      color: white;
+      font-weight: bold;
+    }
   }
 
   .editor-wrapper {
     width: 100%;
-    height: 100%;
+    height: 500px;
 
     iframe {
       width: 100%;

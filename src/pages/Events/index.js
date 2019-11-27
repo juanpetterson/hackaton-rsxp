@@ -14,26 +14,15 @@ import {
   SchoolRating,
 } from './styles';
 
+import './style.css';
+
 export default function Events() {
   return (
-    <>
+    <div>
       <Header signed />
-      <List>
-        <Event>Rocketseat Experience 2019</Event>
-        <Event>Rocketseat Experience 2019</Event>
-        <Event>Rocketseat Experience 2019</Event>
-        <Event>Rocketseat Experience 2019</Event>
-      </List>
-      <Ranking>
-        <Title>Ranking</Title>
-        <School>
-          <SchoolImage />
-          <SchoolWrapper>
-            <SchoolTitle>Escola Estadual</SchoolTitle>
-            <SchoolRating />
-          </SchoolWrapper>
-        </School>
-      </Ranking>
-    </>
+      <div className="hackatons-mock">
+      <img src={require('assets/img/hackatons.jpg')} />
+      </div>
+    </div>
   );
 }
