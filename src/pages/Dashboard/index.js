@@ -53,6 +53,8 @@ export default function Dashboard() {
       if (!level) {
         setCurrentLevel(i + 1);
         break;
+      } else {
+        setCurrentLevel(i + 1);
       }
     }
   }
