@@ -31,11 +31,10 @@ export const Item = styled.li`
   display: flex;
   align-items: center;
   border-radius: 50px;
+  margin: 0 50px;
 
-  margin: 0 10px;
-
-  &:hover {
-    background: orangered;
+  a:visited {
+    color: #4d4d4d;
   }
 `;
 
@@ -46,8 +45,9 @@ export const User = styled.div`
 `;
 
 export const Name = styled.h1`
-  font-size: 24px;
+  font-size: 18px;
   font-weight: normal;
+  color: #f36d34;
 `;
 
 export const Avatar = styled.img`
