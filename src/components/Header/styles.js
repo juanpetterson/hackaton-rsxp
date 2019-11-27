@@ -13,7 +13,7 @@ export const Container = styled.div`
 export const WrapperLogo = styled.a``;
 
 export const Logo = styled.img`
-  margin: 24px 0 0 24px;
+  margin: 0 0 0 24px;
 `;
 
 export const TitleLogo = styled.img`
