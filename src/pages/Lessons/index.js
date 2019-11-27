@@ -26,7 +26,9 @@ export default function Lessons() {
       <Header signed />
       <div className="lesson">
         <nav>
-          <Link to="/dashboard">Voltar para o painel</Link>
+          <Link className="back" to="/dashboard">
+            Voltar para o Dashboard
+          </Link>
         </nav>
         <header>
           <h1>Lição: {data.title}</h1>
